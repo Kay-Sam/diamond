@@ -839,7 +839,7 @@ iframe.wait-autoplay {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 869px) {
   .glightbox-container .ginner-container {
     width: auto;
     height: auto;

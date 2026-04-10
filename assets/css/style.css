@@ -109,8 +109,8 @@ h6 {
 .header .logo img {
   max-height: 150px; 
   width: auto;    
-  margin-top: 10px;
-  margin-left: 15px;
+  margin-top: -5px;
+  margin-left: 1px;
 }
 
 }
@@ -126,7 +126,7 @@ h6 {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   .navbar {
     padding: 0;
   }
@@ -172,7 +172,7 @@ h6 {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 
   .mobile-nav-show,
   .mobile-nav-hide {
@@ -318,7 +318,7 @@ h6 {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/ 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar {
     position: fixed;
     top: 0;
@@ -505,7 +505,7 @@ h6 {
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar .dropdown ul {
     margin: 20px;
     position: static;  /* stack inside mobile sidebar */
@@ -598,15 +598,15 @@ transform: translateX(-30px);
    ANIMATIONS PER SLIDE
 ========================= */
 .carousel-item.active .hero-content h1 {
-  animation: fadeUp 1s ease forwards;
+  animation: fastFadeSlide 0.3s ease-out forwards;
 }
 
 .carousel-item.active .hero-content p {
-  animation: fadeUp 1.2s ease forwards;
+  animation: fastFadeSlide 0.35s ease-out forwards;
 }
 
 .carousel-item.active .hero-content a {
-  animation: fadeUp 1.4s ease forwards;
+  animation: fastFadeSlide 0.4s ease-out forwards;
 }
 
 /* =========================
@@ -616,6 +616,13 @@ transform: translateX(-30px);
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fastFadeSlide {
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
@@ -637,7 +644,7 @@ transform: translateX(-30px);
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 .hero-slide {
   height: 85vh;
   background-size: cover;
@@ -707,7 +714,7 @@ transform: translateX(-30px);
   color: #000;
   transform: translateY(-2px);
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .carousel-control-prev,
   .carousel-control-next {
     display: none !important;
@@ -719,7 +726,15 @@ transform: translateX(-30px);
   
 }
 }
-
+@media (max-width: 400px) {
+  .btn-primary,
+.btn-outline {
+  display: inline-block;
+  margin: 2px;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -1905,7 +1920,7 @@ section {
 
 
 /* ===== Responsive ===== */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .services-hero h1 {
         font-size: 2rem;
     }
