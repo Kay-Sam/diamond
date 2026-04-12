@@ -61,52 +61,70 @@
 
 <body>
   
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
+    <!-- Logo -->
 <a href="#" class="logo d-flex align-items-center">
   <h1 class="logo me-auto"><a href="index.html">JeanAnnFoley</a></h1>
 </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#services">Custom Web Design</a></li></li>
-              <li><a href="#services">Web development</a></li>
-              <li><a href="#services">E-commerce Solutions</a></li>
-              <li><a href="#services">Training & Mentorship</a></li>
-            </ul>
-          </li> 
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#services">Custom Web Design</a></li></li>
-              <li><a href="#services">Web development</a></li>
-              <li><a href="#services">E-commerce Solutions</a></li>
-              <li><a href="#services">Training & Mentorship</a></li>
-            </ul>
-          </li> 
-          <li><a href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto"
-   href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello+there%21%0AI%27m+interested+in+your+website+development+services.%0AI+would+like+to+know+more+about+your+pricing.%0AThank+you.&type=phone_number&app_absent=0"
-   target="_blank">
-   Inquire
-</a>
-</li>
-        </ul>
-      </nav><!-- .navbar -->
+    <!-- Mobile Toggle -->
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-    </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <ul>
 
+        <li><a href="index.html" class="active">Home</a></li>
 
+        <li><a href="#about">About</a></li>
+
+        <!-- Research -->
+        <li class="dropdown">
+          <a href="#research">
+            <span>Research</span> <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="#research">Diamond Formation</a></li>
+            <li><a href="#research">Material Analysis</a></li>
+            <li><a href="#research">Laboratory Studies</a></li>
+            <li><a href="#research">Innovation Reports</a></li>
+          </ul>
+        </li>
+
+        <!-- Collections -->
+        <li class="dropdown">
+          <a href="#collections">
+            <span>Collections</span> <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul>
+            <li><a href="#collections">Natural Diamonds</a></li>
+            <li><a href="#collections">Synthetic Studies</a></li>
+            <li><a href="#collections">Rare Findings</a></li>
+            <li><a href="#collections">Case Studies</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+
+        <!-- CTA -->
+        <li>
+          <a class="getstarted scrollto"
+             href="https://api.whatsapp.com/send/?phone=2347053088651&text=Hello%20JeanAnnFoley%2C%20I%27m%20interested%20in%20your%20diamond%20research%20services.&type=phone_number&app_absent=0"
+             target="_blank">
+            Inquire
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<!-- End Header -->
  
  <!-- ===== HERO SLIDER ===== -->
 <section id="heroCarousel" class="carousel slide hero-slider" data-bs-ride="carousel" data-bs-interval="4000">
@@ -156,7 +174,7 @@
 
         <div class="hero-content">
           <h1>Precision. Clarity. Excellence.</h1>
-          <p>We study diamonds beyond beauty — into structure and origin.</p>
+          <p>We study diamonds as natural records of Earth’s formation and evolution.</p>
 <a href="#" class="btn-primary">Explore Research</a>
 <a href="contact-us.php" class="btn-outline">Contact Us</a>
         </div>
@@ -185,7 +203,7 @@
     <div class="why-wrapper">
 
       <!-- LEFT: IMAGE -->
-      <div class="why-image">
+      <div class="why-image"  data-aos="fade-right">
         <img src="assets/img/d23.jpg" alt="Diamond Research">
 
         <!-- Decorative Shape -->
@@ -193,7 +211,7 @@
       </div>
 
       <!-- RIGHT: CONTENT -->
-      <div class="why-content">
+      <div class="why-content"  data-aos="fade-left">
        <span class="section-badge">About us</span>
 
         <p class="lead">
@@ -207,7 +225,7 @@
         <p>
           By combining advanced gemological technology with rigorous methodologies, we uncover deeper insights into diamond structure, clarity, and origin. Our commitment to ethical standards ensures every result is accurate, transparent, and industry-relevant.
         </p>
-<p><a href="#" class="btn-about">Make an Inquiry</a></p>
+<p><a href="#" class="btn-about"  data-aos="fade-up">Make an Inquiry</a></p>
 
       </div>
 
@@ -261,13 +279,13 @@
   <div class="container">
 
     <!-- Section Title -->
-    <div class="section-header">
+    <div class="section-title-left"  data-aos="fade-right">
       <span class="line"></span>
       <h6>WHY CHOOSE US</h6>
       <h2>Excellence in Diamond Research & Innovation</h2>
     </div>
 
-    <div class="row g-4">
+    <div class="row g-4"  data-aos="fade-up">
 
       <!-- Feature 1 -->
       <div class="col-lg-3 col-md-6">
@@ -332,13 +350,13 @@
       <!-- Image -->
       <div class="col-lg-5">
         <div class="ceo-image">
-          <img src="assets/img/ceo.jpeg" alt="CEO" class="img-fluid">
+          <img src="assets/img/ceo.jpeg" alt="CEO" class="img-fluid"  data-aos="fade-right">
         </div>
       </div>
 
       <!-- Content -->
       <div class="col-lg-7">
-        <div class="ceo-content">
+        <div class="ceo-content"  data-aos="fade-left">
           <h6>LEADERSHIP & VISION</h6>
           <h2>Driving Innovation in Diamond Research</h2>
 
@@ -363,25 +381,26 @@
 <section id="expertise" class="expertise-lite">
   <div class="container">
 
-    <!-- SECTION TITLE -->
-    <div class="section-header">
-      <h6>OUR EXPERTISE</h6>
-      <h2>Great Experience in Diamond Research</h2>
-      <p>
-        We combine advanced laboratory techniques with scientific precision to study diamonds from formation to application, ensuring accurate and reliable research outcomes.
-      </p>
-    </div>
+<!-- SECTION TITLE -->
+<div class="section-title-left" data-aos="fade-right">
+
+  <h6>OUR EXPERTISE</h6>
+  <h2>Great Experience in Diamond Research</h2>
+  <p>
+    We combine advanced laboratory techniques with scientific precision to study diamonds from formation to application, ensuring accurate and reliable research outcomes.
+  </p>
+</div>
 
     <!-- CONTENT -->
     <div class="expertise-wrapper">
 
       <!-- IMAGE -->
-      <div class="expertise-image">
+      <div class="expertise-image"  data-aos="fade-up">
         <img src="assets/img/d24.jpg" alt="Diamond Research Laboratory">
       </div>
 
       <!-- TEXT -->
-      <div class="expertise-text">
+      <div class="expertise-text"  data-aos="fade-left">
 
         <h3>Precision-Driven Diamond Analysis</h3>
 
@@ -398,39 +417,50 @@
 </ul>
         </ul>
 
-        <!-- STATS -->
-        <div class="expertise-stats">
+      <div class="expertise-stats">
 
-          <div class="stat-box">
-            <h4>250+</h4>
-            <span>Research Projects</span>
-          </div>
+  <div class="stat-box">
+    <h4>
+      <span class="purecounter"
+        data-purecounter-start="0"
+        data-purecounter-end="250"
+        data-purecounter-duration="2"></span>+
+    </h4>
+    <span>Research Projects</span>
+  </div>
 
-          <div class="stat-box">
-            <h4>98%</h4>
-            <span>Accuracy Rate</span>
-          </div>
+  <div class="stat-box">
+    <h4>
+      <span class="purecounter"
+        data-purecounter-start="0"
+        data-purecounter-end="98"
+        data-purecounter-duration="2"></span>%
+    </h4>
+    <span>Accuracy Rate</span>
+  </div>
 
-          <div class="stat-box">
-            <h4>25+</h4>
-            <span>Years Experience</span>
-          </div>
+  <div class="stat-box"> 
+    <h4>
+      <span class="purecounter"
+        data-purecounter-start="0"
+        data-purecounter-end="25"
+        data-purecounter-duration="2"></span>+
+    </h4>
+    <span>Years Experience</span>
+  </div>
 
-        </div>
-
-      </div>
+</div>
 
     </div>
   </div>
 </section>
 
-<section id="gallery" class="gallery">
+<section id="gallery" class="gallery"  data-aos="fade-right">
   <div class="container">
 
     <!-- HEADER -->
     <div class="text-center">
       <h6 class="section-badge">GALLERY</h6>
-      <h2>Our Diamond Research in Action</h2>
       <p>
         Explore moments from our laboratory, research processes, and diamond analysis work.
       </p>
@@ -441,43 +471,43 @@
 
       <!-- ITEM -->
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d1.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d22.jpg">
           <img src="assets/img/d22.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <!-- ITEM -->
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d1.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d11.jpg">
           <img src="assets/img/d11.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <!-- ITEM -->
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d1.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d10.jpg">
           <img src="assets/img/d10.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <!-- ITEM -->
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d1.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d15.jpg">
           <img src="assets/img/d15.jpg" class="img-fluid" alt="">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d10.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d3.jpg">
           <img src="assets/img/d3.jpg" class="img-fluid" alt="">
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d14.jpg">
           <img src="assets/img/d14.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
-          <img src="assets/img/d7.jpg" class="img-fluid" alt="">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d5.jpg">
+          <img src="assets/img/d5.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
@@ -486,26 +516,26 @@
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d7.jpg">
           <img src="assets/img/d7.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d6.jpg">
           <img src="assets/img/d6.jpg" class="img-fluid" alt="">
         </div>
       </div>
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d9.jpg">
           <img src="assets/img/d9.jpg" class="img-fluid" alt="">
         </div>
       </div>
+
       <div class="col-lg-4 col-md-6">
-        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d12.jpg">
-          <img src="assets/img/d8.jpg" class="img-fluid" alt="">
+        <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="assets/img/d8.png">
+          <img src="assets/img/d8.png" class="img-fluid" alt="">
         </div>
       </div>
-
     </div>
 
   </div>
@@ -526,8 +556,8 @@
     </div>
   </div>
 </div>
-  <section class="cta-section">
-  <div class="container text-center">
+  <section class="cta-section" >
+  <div class="container text-center"  data-aos="fade-up">
     
     <h2>Partner With Us for Advanced Diamond Research</h2>
     
@@ -547,84 +577,94 @@
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container">
+    <!-- HEADER -->
+<div class="text-center">
+  <h6 class="section-badge">TESTIMONIALS</h6>
+  <p>
+    Feedback and insights from professionals who have collaborated with our diamond research institute and experienced our scientific excellence.
+  </p>
+</div>
+       <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+  <div class="swiper-wrapper">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+    <!-- Testimonial 1 -->
+    <div class="swiper-slide">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <h3>Dr. Michael Adeyemi</h3>
+          <h4>Geologist & Diamond Specialist</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            JeanAnnFoley’s research approach is exceptional. Their precision in diamond analysis and laboratory techniques provides insights that are both accurate and industry-relevant.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+    <!-- Testimonial 2 -->
+    <div class="swiper-slide">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <h3>Olivia Carter</h3>
+          <h4>Gemstone Consultant</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Working with JeanAnnFoley has elevated our understanding of diamond structures. Their laboratory standards and research depth are truly world-class.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+    <!-- Testimonial 3 -->
+    <div class="swiper-slide">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <h3>Engr. Daniel Okafor</h3>
+          <h4>Materials Engineer</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            Their expertise in material testing and diamond research is unmatched. The level of detail and scientific accuracy they provide is impressive.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+    <!-- Testimonial 4 -->
+    <div class="swiper-slide">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <h3>Sarah Williams</h3>
+          <h4>Luxury Jewelry Brand Owner</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            JeanAnnFoley helped us verify and understand the quality of our diamonds with absolute clarity. Their professionalism and research excellence stand out.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+    <!-- Testimonial 5 -->
+    <div class="swiper-slide">
+      <div class="testimonial-wrap">
+        <div class="testimonial-item">
+          <h3>Prof. James Richardson</h3>
+          <h4>Research Scientist</h4>
+          <p>
+            <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+            A leading name in diamond research. Their innovative methods and commitment to scientific excellence make them a trusted partner in advanced studies.
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+          </p>
+        </div>
+      </div>
+    </div>
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+  </div>
+</div>
+<!-- testimonial items end -->
 
           </div>
           <div class="swiper-pagination"></div>
@@ -632,50 +672,6 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row g-0">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/d20.jpg" class="gallery-lightbox">
-                <img src="assets/img/d22.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/d12.jpg" class="gallery-lightbox">
-                <img src="assets/img/d12.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
- ]
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/d1.jpg" class="gallery-lightbox">
-                <img src="assets/img/d1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
 
  <!-- ======= FAQ Section ======= -->
 <section id="faq" class="faq">
@@ -796,11 +792,12 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-      </div>
+<div class="section-title">
+  <h2>Contact</h2>
+  <p>
+    Connect with us to explore advanced diamond research, expert analysis, and collaborative opportunities. At the Melinda Whigham Diamond Institute, we combine precision, innovation, and scientific excellence to deliver results you can trust.
+  </p>
+</div>
 
       <div>
 <iframe
@@ -840,7 +837,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -872,53 +869,65 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Medilab</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>JeanAnnFoley</h3>
+          <p>
+            Diamond Research Laboratory <br>
+            Las Vegas, USA<br><br>
+            <strong>Phone:</strong> +1 213-555-0123<br>
+            <strong>Email:</strong> info@jeanannfoley.com<br>
+          </p>
+        </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About Research</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Our Expertise</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Research Areas</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Diamond Analysis</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Gemstone Identification</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Material Testing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Laboratory Research</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Consultation</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>
+            Get insights on diamond research, laboratory discoveries, and industry innovations directly to your inbox.
+          </p>
+          <form action="" method="post">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
         </div>
       </div>
@@ -928,23 +937,11 @@
 
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>Medilab</span></strong>. All Rights Reserved
+        &copy; Copyright <script>document.write(new Date ().getFullYear())</script> <strong><span> JeanAnnFoley</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+
       </div>
-      <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
+
     </div>
   </footer><!-- End Footer -->
 
