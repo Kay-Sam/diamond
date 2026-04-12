@@ -190,28 +190,47 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate glightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const glightbox = GLightbox({
+    selector: '.glightbox'
   });
 
   /**
-   * Portfolio details slider
+   * Initiate Gallery Lightbox 
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
+  const galelryLightbox = GLightbox({
+    selector: '.gallery-lightbox'
+  });
+
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      }
     }
   });
-
   /**
    * Animation on scroll
    */
@@ -307,15 +326,3 @@ ${message}
 
 })()
 
-new Swiper('.testimonials-slider', {
-  speed: 600,
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  }
-});
