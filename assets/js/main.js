@@ -234,7 +234,19 @@
     }
   });
 
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const modalImage = document.getElementById('modalImage');
 
+  galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const imgSrc = item.getAttribute('data-img');
+      modalImage.src = imgSrc;
+    });
+  });
+
+
+
+  
 // Mobile dropdown toggle
 // const dropdownLinks = document.querySelectorAll('.navbar .dropdown > a');
 
@@ -294,3 +306,16 @@ ${message}
 });
 
 })()
+
+new Swiper('.testimonials-slider', {
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  }
+});
