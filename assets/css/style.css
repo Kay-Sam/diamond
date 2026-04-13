@@ -116,6 +116,10 @@ h6 {
 color: #0c3458;
 }
 
+.logo h1 {
+  color: #0a2e4e; 
+}
+
 @media (max-width: 1200px) {
 .header .logo img {
 
@@ -860,7 +864,8 @@ transform: translateX(-30px);
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-top: 70px;
+  padding-top: 20px;
+  padding-bottom: 90px;
 
   
 }
@@ -1543,7 +1548,7 @@ section {
 .cta-btn {
   display: inline-block;
   padding: 12px 28px;
-  background: var(--accent-color);
+  background: #b8941f;
   color: #fff;
   border-radius: 30px;
   font-weight: 500;
