@@ -864,8 +864,8 @@ transform: translateX(-30px);
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding-top: 20px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 10px;
 
   
 }
@@ -1286,7 +1286,6 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -2016,11 +2015,10 @@ section {
   text-align: center;
   max-width: 700px;
   margin: auto;
-  margin-bottom: 60px;
 }
 
 .section-title h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .section-title p {
@@ -2080,7 +2078,7 @@ section {
 
 /* CARD */
 .collection-card {
-  background: #1a1a1a;
+  background: #fcfcfc;
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s ease;
@@ -2124,4 +2122,156 @@ section {
   .collections-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* HERO */
+.rough-hero {
+  padding: 120px 20px;
+  background: url('../img/d19.jpg') center/cover no-repeat;
+  position: relative;
+  text-align: center;
+}
+
+.rough-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.rough-hero h1,
+.rough-hero p,
+.rough-hero .breadcrumbs {
+  position: relative;
+}
+
+.rough-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.rough-hero p {
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* MAIN */
+.rough-main {
+  padding: 80px 20px;
+}
+
+.main-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.spec-card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(212,175,55,0.1);
+  transition: 0.3s ease;
+}
+
+.spec-card:hover {
+  transform: translateY(-6px);
+
+}
+.rough-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.rough-thumb:hover {
+  transform: scale(1.04);
+}
+
+/* GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.product-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+  text-align: center;
+}
+/* IMAGE */
+.product-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: 0.4s;
+}
+
+/* IMAGE HOVER ZOOM */
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* TEXT */
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn-view {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #111;
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: #111;
+  color: #fff;
+}
+/* BUTTON */
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 16px;
+  font-size: 13px;
+  text-decoration: none;
+  border: 1px solid #111;
+  color: #111;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.view-btn:hover {
+  background: #111;
+  color: #fff;
 }

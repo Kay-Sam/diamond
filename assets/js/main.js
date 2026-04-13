@@ -188,7 +188,14 @@
     }
 
   });
-
+document.addEventListener("DOMContentLoaded", function () {
+  GLightbox({
+    selector: '.rough-lightbox',
+    touchNavigation: true,
+    loop: true,
+    closeButton: true
+  });
+});
   /**
    * Testimonials slider
    */
